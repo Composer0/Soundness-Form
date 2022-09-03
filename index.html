@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>School Driver Eval</title>
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <img src="img/driverIcon.png" width="100px" />
+        </div>
+        <div class="motto">
+            <h1 class="brandName">Soundness</h1>
+            <p>A Company that works to put Driver Wellbeing First</p>
+        </div>
+    </nav>
+    
+    <h2>Driver Eval</h2>
+    <div class="container">
+        
+        <form id="contact-form">
+            <div class="organization">
+
+                <div id="information">
+
+                    <div class="identity">
+                        <label for="name">Full Name</label>
+                        <input id="name" name="name" type="text" placeholder="Name" col="39" required></input>
+                        <label for="driverNumber">Driver Number</label>
+                        <input id="DN" name="DN" type="text" placeholder="DN" required></input>
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="text" placeholder="email" required></input>
+                    </div>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="physicalInfo">
+                        <label for="age">Age</label>
+                        <input id="age" name="age" type="number" placeholder="Age" min="0" required></input>
+                        <label for="height">Height</label>
+                        <div class="side-by-side">
+                            <select id="heightFoot" name="heightFoot" type="text" required>
+                                    <option value="3">3'</option>
+                                    <option value="3">4'</option>
+                                    <option value="3">5'</option>
+                                    <option value="3">6'</option>
+                                    <option value="3">7'</option>
+                                    <option value="3">8'</option>
+                                </select>
+                            <select id="heightInch" name="heightInch" type="text" required>
+                                <option value="0">0"</option>
+                                <option value="0">1"</option>
+                                <option value="0">2"</option>
+                                <option value="0">3"</option>
+                                <option value="0">4"</option>
+                                <option value="0">5"</option>
+                                <option value="0">6"</option>
+                                <option value="0">7"</option>
+                                <option value="0">8"</option>
+                                <option value="0">9"</option>
+                                <option value="0">10"</option>
+                                <option value="0">11"</option>
+                                <option value="0">12"</option>
+                            </select>
+                        </div>
+                        <label for="weight">Weight</label>
+                        <input id="weight" name="weight" type="number" placeholder="Weight" min="0" required></input>
+                        <label for="healthConcern">Health Conditions</label>
+                        <textarea id="healthConcern" name="healthConcern" type="text" placeholder="Enter current health conditions here." rows="6" cols="39" required></textarea>
+                    </div>
+
+                    <div class="line"></div>
+                    
+                    <div class="mentalInfo">
+                        <label for="stressLevel">Stress Level</label>
+                        <select id="stressLevel" name="stressLevel" type="number" placeholder="Stress Level" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <label for="stressCause">Causes of Stress</label>
+                        <textarea id="stressCause" name="stressCause" type="text" placeholder="Enter what causes you stress while on the job." rows="6" cols="39" required></textarea>
+                        <label for="concernAndNeeds">Concerns and Needs</label>
+                        <textarea  id="concernAndNeeds" name="concernAndNeeds" placeholder="Enter your current concerns and areas that you feel that you need support." rows="6" cols="39" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" id="btn" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+        <div class="informationSection">
+            <div class="output">
+                <h2>Form Data Output</h2>
+                <pre class="output-pre"></pre>
+            </div>
+        </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
