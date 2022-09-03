@@ -3,7 +3,7 @@ Hackathon Project.
 
 Taking form data and converting it into JSON objects for later use.
 
-https://composer0.github.io/fitness.physicalSecurity.drivers/
+https://composer0.github.io/Soundness-Form/
 
 Had to create an application based on Fitness, feature Physical Security, with the client being drivers.
 
